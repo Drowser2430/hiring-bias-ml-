@@ -19,3 +19,17 @@ This project demonstrates that algorithmic fairness can be integrated as a first
 ---
 
 ## Repository Structure
+
+```
+hiring-bias-ml/
+├── README.md
+├── notebooks/
+│   ├── 01_data_prep_and_feature_store.ipynb     Data ingestion, EDA, splits, Feature Store
+│   ├── 02_cicd_pipeline.ipynb                   SageMaker Pipelines CI/CD with fairness gate
+│   ├── 03_monitoring_FIXED.ipynb                Endpoint deploy + Model Monitor + Clarify
+│   └── 04_bias_audit_colab.ipynb                Standalone bias audit (runs on Google Colab)
+├── paper/
+│   └── Rowser_Yunus_Bias_Hiring_AAI540.docx     Final APA-formatted project paper
+├── images/
+│   ├── pretraining_bias.png                     Label distribution by protected group
+│   ├── disparate_impact.png                     DI across three models and
