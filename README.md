@@ -20,7 +20,7 @@ This project demonstrates that algorithmic fairness can be integrated as a first
 
 ## Repository Structure
 
-```
+
 hiring-bias-ml/
 ├── README.md
 ├── notebooks/
@@ -33,3 +33,15 @@ hiring-bias-ml/
 ├── images/
 │   ├── pretraining_bias.png                     Label distribution by protected group
 │   ├── disparate_impact.png                     DI across three models and
+
+---
+
+## Data
+
+**Source:** UCI Machine Learning Repository, Adult Income dataset (Becker & Kohavi, 1996)<br>
+**URL:** https://archive.ics.uci.edu/ml/datasets/adult<br>
+**Records:** 48,842 raw, 45,222 after dropping null values<br>
+**Features:** 14 (6 numeric, 8 categorical) plus a binary income label<br>
+**Favorable class:** Income greater than $50,000 per year (24.8% of cleaned dataset)
+
+The raw data is pulled directly from the UCI repository at notebook runtime and is not stored in this repository. Within AWS, all processed data and model artifacts live in S3 under:
